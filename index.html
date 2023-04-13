@@ -1,214 +1,366 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="estilos.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <title>Portafolio Elvis Guanoluisa</title>
-   <script src="https://cdn.tailwindcss.com"></script> <!-- ENLACE -->
 </head>
 
 <body>
 
-   <nav class="bg-gray-900 px-2 sm:px-4 py-2.5 fixed w-full"> <!-- 8px, 10px -->
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-         <h1 class="self-center text-xl font-semibold whitespace-nowrap text-white">ELVIS</h1>
-         <button type="button" id="boton"
-            class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
-            <!-- Imagen de hamburguesa -->
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-               <path fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"></path>
-            </svg>
-         </button>
-         <div class="w-full md:block md:w-auto" id="menu">
-            <ul
-               class="flex flex-col p-4 mt-4 bg-gray-90 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-               <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-white bg-gray-500 md:bg-transparent md:p-0">Home</a>
-               </li>
-               <li>
-                  <a href="#sobre-mi" class="block py-2 pl-3 pr-4 text-white bg-gray-500 md:bg-transparent md:p-0">Sobre mí</a>
-               </li>
-               <li>
-                  <a href="#proyectos"
-                     class="block py-2 pl-3 pr-4 text-white bg-gray-500 md:bg-transparent md:p-0">Portafolio</a>
-               </li>
-               <li>
-                  <a href="#contacto" class="block py-2 pl-3 pr-4 text-white bg-gray-500 md:bg-transparent md:p-0">Contacto</a>
-               </li>
+   <!-- SECCION INICIO -->
+   <section id="inicio">
+      <div class="contenido">
+         <header>
+            <div class="contenido-header">
+               <h1>Elvis Guanoluisa</h1>
+               <nav id="nav" class="">
+                  <ul id="links">
+                     <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                     <li><a href="#sobre-mi">SOBRE MI</a></li>
+                     <li><a href="#servicios">SERVICIOS</a></li>
+                     <li><a href="#portafolio">PORTAFOLIO</a></li>
+                     <li><a href="#contacto">CONTACTO</a></li>
+                  </ul>
+               </nav>
+               <!-- Icono para el menu -->
+               <div id="icono-nav">
+                  <i class="fa-solid fa-bars"></i>
+               </div>
+               <!-- Iconos redes sociales -->
+               <div class="redes">
+                  <a href="https://www.linkedin.com/in/elvis-guanoluisa/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/elvissoide" target="_blank"><i class="fa-brands fa-github"
+                        target="_blank"></i></a>
+                  <a href="https://www.youtube.com/@elvisguanoluisa8043" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+               </div>
+            </div>
+         </header>
+         <div class="presentacion">
+            <p class="bienvenida">Bienvenidos/as</p>
+            <h2>Soy <span>Elvis Guanoluisa</span>, Desarrollador de Software</h2>
+            <p class="descripcion">Estudiante de desarrollo de software, apasionado por la tecnología y enfoca en ser
+               desarrollador Backend.</p>
+            <a href="#portafolio">Ir a portafolio</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- SECCION SOBRE MI -->
+   <section id="sobre-mi">
+      <div class="contenedor-foto">
+         <img src="media/foto-perfil.jpeg" alt="Foto de perfil">
+      </div>
+      <div class="sobre-mi">
+         <p class="titulo-seccion">Sobre mi</p>
+         <h2>Hola, soy <span>Elvis Guanoluisa</span></h2>
+         <h3>Desarrollador de Software</h3>
+         <p>Actualmente curso mi último año de estudio en la Escuela Politécnica Nacional. Soy un desarrollador creativo y apasionado por explorar todas las posibilidades que los diferentes lenguajes de programación nos brindan en un área específica.</p>
+         <p>Mi objetivo es crear soluciones eficientes e innovadoras en cada proyecto desarrollado, siempre en constante capacitación para ir a la par de las nuevas tecnologías. Mi área de enfoque es el BackEnd.</p>
+         <a href="media/CV-ElvisGuanoluisa.pdf" download="CV-ElvisGuanoluisa.pdf">Descargar CV [ES]</a>
+      </div>
+   </section>
+
+   <!-- SECCION SERVICIOS -->
+   <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Desarrollo Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>JavaScript</li>
             </ul>
+            <p>Diseño y desarrollo de sitios web personalizados acorde a las necesidades de la persona o negocio.</p>
+         </div>
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Migración de Excel a bases de datos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Python</li>
+               <li>SQL</li>
+            </ul>
+            <p>Migración de datos para el fácil acceso y manipulación de los mismos. El objetivo es centralizar la gestión en una base de datos segura y robusta.</p>
+         </div>
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Tutorías</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>C++</li>
+               <li>Java</li>
+               <li>Python</li>
+               <li>SQL</li>
+            </ul>
+            <p>Clases virtuales de tutorías y acompañamiento para estudiantes universitarios o de educación secundaria.</p>
          </div>
       </div>
-   </nav>
-
-   <section class="grid grid-cols-1 content-center bg-gray-200" style="height: 700px;">
-      <div class="flex flex-col sm:flex-row">
-         <div class="text-center sm:text-right px-8 sm:pl-16 font-bold pb-10 sm:w-1/2 p-2">
-            <img class="mx-auto rounded-full" src="media/foto-perfil.jpeg" style="max-width: 350px; max-height: 350px;" alt="Foto de perfil">
+      <!-- <div class="fila">
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de sitios web informativos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Cr 1</li>
+               <li>Cr 2</li>
+               <li>Cr 3</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam voluptates, rerum voluptate
+               consequuntur aliquid dolores?</p>
          </div>
-         <div class="text-center sm:text-left px-8 sm:pr16 sm:w-1/2 py-16 text-3xl">
-            <p>Mi nombre es</p>
-            <p>Elvis Guanoluisa</p>
-            <p>Soy desarrollador de software</p>
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de sitios web informativos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Cr 1</li>
+               <li>Cr 2</li>
+               <li>Cr 3</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam voluptates, rerum voluptate
+               consequuntur aliquid dolores?</p>
+         </div>
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de sitios web informativos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Cr 1</li>
+               <li>Cr 2</li>
+               <li>Cr 3</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam voluptates, rerum voluptate
+               consequuntur aliquid dolores?</p>
          </div>
       </div>
+      <div class="fila">
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de sitios web informativos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Cr 1</li>
+               <li>Cr 2</li>
+               <li>Cr 3</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam voluptates, rerum voluptate
+               consequuntur aliquid dolores?</p>
+         </div>
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de sitios web informativos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Cr 1</li>
+               <li>Cr 2</li>
+               <li>Cr 3</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam voluptates, rerum voluptate
+               consequuntur aliquid dolores?</p>
+         </div>
+         <div class="servicio">
+            <span class="icono"><i class="fa-solid fa-code"></i></span>
+            <h4>Diseño de sitios web informativos</h4>
+            <hr>
+            <ul class="servicios-tag">
+               <li>Cr 1</li>
+               <li>Cr 2</li>
+               <li>Cr 3</li>
+            </ul>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam voluptates, rerum voluptate
+               consequuntur aliquid dolores?</p>
+         </div>
+      </div> -->
    </section>
 
-   <section id="sobre-mi" class="grid grid-cols-1 content-center bg-gray-300" style="height: 700px;">
-      <h2 class="text-center text-2xl font-semibold p-5 font-bold mb-6">SOBRE MÍ</h2>
-      <div class="flex flex-col sm:flex-row">
-         <div class="text-center sm:text-right px-8 sm:pl-16 font-bold pb-10 sm:w-1/2 p-2">
-            <p>Hola, Soy Elvis, desarrollador web, tómate un café mientras visitas mi perfil.</p>
-            <p>Mi interés principal es el backend, sin embargo practico el front-end ocasionalmente.</p>
+   <!-- SECCION HABILIDADES -->
+   <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>HTML & CSS</p>
+            <span class="porcentaje">70%</span>
          </div>
-         <div class="text-center sm:text-left px-8 sm:pr16 sm:w-1/2">
-            <h3 class="font-semibold">DATOS PERSONALES</h3>
-               <ul>
-                  <li><b>Fecha de nacimiento: </b>27/07/1999</li>
-                  <li><b>Teléfono: </b>0988815272</li>
-                  <li><b>Correo electrónico: </b>elviserock@gmail.com</li>
-                  <li><b>Dirección: </b>Miravalle 1, Quito, Ecuador</li>
-                  <li><b>Idioma extranjero: </b>Inglés medio</li>
-                  <li><b>Linkedin: </b>https://www.linkedin.com/in/elvisguanoluisa/</li>
-                  <li><b>GitHub: </b>https://github.com/elvissoide</li>
-               </ul>
+         <div class="barra">
+            <div id="html"></div>
          </div>
       </div>
-   </section>
 
-   <section id="proyectos" class="grid grid-cols-1 content-center text-center bg-gray-400" style="height: 700px;">
-      <h2 class="text-center text-2xl font-semibold p-5 font-bold mb-6 mt-6">PROYECTOS</h2>
-      <div class="flex flex-col justify-center sm:flex-row">
-         <div class="justify-center sm:text-right px-8 sm:pl-16 font-bold pb-10">
-            <h3 class="text-center mb-6">Sistema minimarket (demo)</h3>
-            <a href="https://github.com/elvissoide/minimarket.git">
-               <img class="mx-auto rounded-lg" src="media/minimarket.jpg" style="max-width: 300px; max-height: 300px;" alt="Proyecto citas medicas">
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>JavaScript</p>
+            <span class="porcentaje">25%</span>
+         </div>
+         <div class="barra">
+            <div id="js"></div>
+         </div>
+      </div>
+
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>Base de datos</p>
+            <span class="porcentaje">75%</span>
+         </div>
+         <div class="barra">
+            <div id="bd"></div>
+         </div>
+      </div>
+
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>C++</p>
+            <span class="porcentaje">70%</span>
+         </div>
+         <div class="barra">
+            <div id="cpp"></div>
+         </div>
+      </div>
+
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>Python</p>
+            <span class="porcentaje">50%</span>
+         </div>
+         <div class="barra">
+            <div id="py"></div>
+         </div>
+      </div>
+
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>Java</p>
+            <span class="porcentaje">70%</span>
+         </div>
+         <div class="barra">
+            <div id="java"></div>
+         </div>
+      </div>
+
+      <div class="skill">
+         <div class="info">
+            <p><span class="lista"></span>Figma</p>
+            <span class="porcentaje">50%</span>
+         </div>
+         <div class="barra">
+            <div id="figma"></div>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- SECCION PORTAFOLIO -->
+   <section id="portafolio">
+      <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+      <div class="fila">
+         <div class="proyecto">
+            <a href="https://flourishing-heliotrope-008d08.netlify.app" target="_blank">
+               <div class="overlay"></div>
+               <img src="media/ProyectoPolitutorias.png" alt="">
+               <div class="info">
+                  <h4>Web informativa, tutorías personalizadas</h4>
+                  <p>FrontEnd</p>
+               </div>
             </a>
          </div>
-         <div class="justify-center sm:text-left px-8 sm:pr16 font-bold pb-10">
-            <h3 class="text-center mb-6">Página informativa coope</h3>
-            <a href="https://deficient-fireplugs.000webhostapp.com">
-               <img class="mx-auto rounded-lg" src="media/coope.jpg" style="max-width: 300px; max-height: 300px;" alt="Proyecto Scrud estudiantes">
+
+         <div class="proyecto">
+            <a href="https://github.com/elvissoide/SistemaCitasMedicas.git" target="_blank">
+               <div class="overlay"></div>
+               <img src="media/Proyecto-CitasMedicas.jpg" alt="">
+               <div class="info">
+                  <h4>Gestión citas, médicos, pacientes</h4>
+                  <p>Programación estructurada</p>
+               </div>
             </a>
+         </div>
+
+         <div class="proyecto">
+            <a href="https://github.com/elvissoide/minimarket.git" target="_blank">
+               <div class="overlay"></div>
+               <img src="media/Proyecto-Minimarket.jpg" alt="">
+               <div class="info">
+                  <h4>Gestión minimarket</h4>
+                  <p>POO y Bases de Datos</p>
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="fila">
+         <div class="proyecto">
+            <a href="https://deficient-fireplugs.000webhostapp.com" target="_blank">
+               <div class="overlay"></div>
+               <img src="media/Proyecto-Coope.jpg" alt="">
+               <div class="info">
+                  <h4>Página informativa, grupo económico</h4>
+                  <p>FrontEnd</p>
+               </div>
+            </a>
+         </div>
+
+         <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="media/ProyectoPolitutorias.png" alt="">
+            <div class="info">
+               <h4>Descripción</h4>
+               <p>Diseño web</p>
+            </div>
+         </div>
+
+         <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="media/ProyectoPolitutorias.png" alt="">
+            <div class="info">
+               <h4>Descripción</h4>
+               <p>Diseño web</p>
+            </div>
          </div>
       </div>
    </section>
 
-   <section id="contacto" class="bg-gray-500 flex flex-col" style="height: 700px;">
-         <h2 class="text-center text-2xl font-semibold p-5 font-bold mb-1 mt-6">CONTACTO</h2>
-         <div class="flex flex-col p-10 sm:px-52 min-w-full mx-auto">
-            <input class="bg-gray-300 rounded-lg" type="text" placeholder="Nombre"><br>
-            <input class="bg-gray-300 rounded-lg" type="text" placeholder="Correo electrónico"><br>
-            <input class="bg-gray-300 rounded-lg" type="text" placeholder="Número de celular"><br>
-            <input class="bg-gray-300 rounded-lg" type="text" placeholder="Asunto"><br>
-            <textarea class="bg-gray-300 rounded-lg"name="" id="" cols="20" rows="10" placeholder="¿Qué necesitas?"></textarea><br>
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enviar</button>
+   <!-- SECCION CONTACTO -->
+   <div id="contacto">
+      <h3 class="titulo-seccion">Contáctame</h3>
+      <div class="contenedor-form">
+         <form action="">
+            <div class="fila mitad">
+               <input type="text" placeholder="Nombre Completo" class="input-mitad">
+               <input type="text" placeholder="Dirección de email" class="input-mitad">
+            </div>
+            <div class="fila">
+               <input type="text" placeholder="Tema..." class="input-full">
+            </div>
+            <div class="fila">
+               <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+            </div>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+         </form>
       </div>
-   </section>
+   </div>
 
-   <footer class="bg-gray-800 text-white text-center p-4">
-      <p>Todos los derechos reservados - Elvis Guanoluisa - &#169;</p>
+   <!-- SECCION FOOTER -->
+   <footer>
+      <p>Todos los derechos reservados - 2023</p>
+      <div class="redes">
+         <a href="https://www.linkedin.com/in/elvis-guanoluisa/" target="_blank"><i
+               class="fa-brands fa-linkedin"></i></a>
+         <a href="https://github.com/elvissoide" target="_blank"><i class="fa-brands fa-github" target="_blank"></i></a>
+         <a href="https://www.youtube.com/@elvisguanoluisa8043" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
    </footer>
 
-   <script src="app.js"></script>
 </body>
 
-</html>
-
-<!-- 
-   class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contacto</a>
- -->
-
-<!-- =============================================== CONCEPTOS BASICOS =============================================== -->
-<!-- 
-      <div class="container mx-auto">
-      <button class="bg-blue-500 sm:bg-red-500 hover:bg-blue-600 font-bold py-2 px-4 rounded-md text-white">
-         Mi botón
-      </button>
-      
-      <h1 class="mt-5 text-green-500 text-5xl text-center">Esto es un h1</h1> 
-      <h2 class="text-right">Esto es un h2</h2>
-      <h3 class="uppercase">Esto es un h3</h3>
-      <h4 class="bg-pink-500">Esto es un h4</h4>
-      <h5 class="shadow-md">Esto es un h5</h5>
-      <h6>Esto es un h6</h6>
-
-      <div class="m-5 p-5 border-4 border-violet-500">
-         <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officiis esse, excepturi unde rerum debitis necessitatibus fugiat veritatis ipsum, voluptatum harum quas consectetur eos ipsa, repellat molestias! Nemo, fugiat a!</p>
-      </div>
-   </div>
- -->
-
-<!-- =============================================== GRID ================================================ -->
-
-<!--    
-   <div class="grid grid-cols-3 gap-4 my-2">
-      <div class="bg-red-300">A</div>
-      <div class="bg-red-300">A</div>
-      <div class="bg-red-300">A</div>
-      <div class="bg-red-300">A</div>
-   </div>
-
-   <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-2">
-      <div class="bg-blue-300">A</div>
-      <div class="bg-blue-300">A</div>
-      <div class="bg-blue-300">A</div>
-   </div>
-
-   <div class="grid grid-cols-4 gap-4 my-2">
-      <div class="bg-pink-300 col-span-2">B</div>
-      <div class="bg-pink-300">A</div>
-      <div class="bg-pink-300">A</div>
-      <div class="bg-pink-300 col-span-4">A</div>
-      <div class="bg-pink-300">A</div>
-      <div class="bg-pink-300">A</div>
-      <div class="bg-pink-300">A</div>
-      <div class="bg-pink-300">A</div>
-   </div>
-
-   <div class="grid grid-cols-12 gap-4 my-2">
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-      <div class="bg-green-300">C</div>
-   </div>
-
-   <div class="grid grid-cols-12 gap-4 my-2">
-      <div class="bg-yellow-300 col-span-4">C</div>
-      <div class="bg-yellow-300 col-span-4">C</div>
-      <div class="bg-yellow-300 col-span-4">C</div>
-   </div>
-
-   <div class="grid grid-cols-4 gap-4 my-2">
-      <div class="bg-red-300 col-start-2">1</div>
-      <div class="bg-red-300 col-start-2">2</div>
-      <div class="bg-red-300">3</div>
-      <div class="bg-red-300">4</div>
-   </div>
--->
-
-<!-- <div class="grid grid-rows-4 gap-4">
-   <div class="bg-orange-500">1</div>
-   <div class="bg-orange-500">2</div>
-   <div class="bg-orange-500">3</div>
-   <div class="bg-orange-500">4</div>
-</div> -->
-
-<!-- <div class="grid grid-cols-1 sm:grid-cols-4 grid-rows-5 sm:grid-rows-2 gap-4">
-   <div class="bg-orange-500">1</div>
-   <div class="bg-orange-500">2</div>
-   <div class="bg-orange-500 col-span-1 sm:col-span-2 row-span-1 sm:row-span-2">3</div>
-   <div class="bg-orange-500">4</div>
-   <div class="bg-orange-500">5</div>
-</div> -->
+</html>s
