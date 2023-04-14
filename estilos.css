@@ -575,5 +575,92 @@ footer a {
    color: white;
    display: inline-block;
    margin: 5px;
+}
 
+/* DISEÑO RESPONSIVO */
+@media screen and (max-width: 920px) {
+   .redes {
+      display: none;
+   }
+   nav {
+      display: none;
+   }
+   nav.responsive {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.8);
+      /* background-color: red; */
+      width: 100%;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      padding: 10px 0;
+   }
+   nav.responsive ul {
+      display: block !important;
+      text-align: center;
+   }
+   nav.responsive ul li {
+      margin: 5px 0;
+   }
+   #icono-nav {
+      display: block;
+   }
+   #inicio .contenido .presentacion h2 {
+      font-size: 40px;
+   }
+   #sobre-mi {
+      padding: 50px 0;
+      display: block;
+   }
+   #sobre-mi .contenedor-foto {
+      max-width: 250px;
+      margin: auto;
+   }
+   #sobre-mi .contenedor-foto img {
+      padding: 8px;
+   }
+   #sobre-mi .sobre-mi .titulo-seccion {
+      text-align: center;
+   }
+   /* #sobre-mi .sobre-mi .curriculum a {
+      display: block;
+      text-align: center;
+      margin: auto;
+   } */
+   #sobre-mi .sobre-mi h2 {
+      font-size: 25px;
+      text-align: center;
+   }
+   #servicios{
+      padding: 50px 15px;
+   }
+   #servicios .fila {
+      display: block;
+   }
+   #servicios .fila .servicio {
+      margin: 15px auto;
+   }
+   #contenedor-skills {
+      padding: 50px 20px;
+   }
+   #portafolio {
+      padding: 50px 20px;
+   }
+   #portafolio .fila {
+      display: block;
+   }
+   #portafolio .fila .proyecto {
+      margin: 10px auto;
+   }
+   #contacto {
+      padding: 50px 15px;
+   }
+   #contacto .contenedor-form .mitad {
+      margin-bottom: 15px;
+      display: block;
+   }
+   #contacto .contenedor-form .mitad input {
+      width: 100%;
+      margin-bottom: 15px;
+   }
 }

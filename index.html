@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <link rel="stylesheet" href="estilos.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -30,7 +30,7 @@
                   </ul>
                </nav>
                <!-- Icono para el menu -->
-               <div id="icono-nav">
+               <div id="icono-nav" onclick="responsiveMenu()">
                   <i class="fa-solid fa-bars"></i>
                </div>
                <!-- Iconos redes sociales -->
@@ -63,9 +63,14 @@
          <p class="titulo-seccion">Sobre mi</p>
          <h2>Hola, soy <span>Elvis Guanoluisa</span></h2>
          <h3>Desarrollador de Software</h3>
-         <p>Actualmente curso mi último año de estudio en la Escuela Politécnica Nacional. Soy un desarrollador creativo y apasionado por explorar todas las posibilidades que los diferentes lenguajes de programación nos brindan en un área específica.</p>
-         <p>Mi objetivo es crear soluciones eficientes e innovadoras en cada proyecto desarrollado, siempre en constante capacitación para ir a la par de las nuevas tecnologías. Mi área de enfoque es el BackEnd.</p>
-         <a href="media/CV-ElvisGuanoluisa.pdf" download="CV-ElvisGuanoluisa.pdf">Descargar CV [ES]</a>
+         <p>Actualmente curso mi último año de estudio en la Escuela Politécnica Nacional. Soy un desarrollador creativo
+            y apasionado por explorar todas las posibilidades que los diferentes lenguajes de programación nos brindan
+            en un área específica.</p>
+         <p>Mi objetivo es crear soluciones eficientes e innovadoras en cada proyecto desarrollado, siempre en constante
+            capacitación para ir a la par de las nuevas tecnologías. Mi área de enfoque es el BaackEnd.</p>
+         <div class="curriculum">
+            <a href="media/CV-ElvisGuanoluisa.pdf" download="CV-ElvisGuanoluisa.pdf">Descargar CV [ES]</a>
+         </div>
       </div>
    </section>
 
@@ -92,7 +97,8 @@
                <li>Python</li>
                <li>SQL</li>
             </ul>
-            <p>Migración de datos para el fácil acceso y manipulación de los mismos. El objetivo es centralizar la gestión en una base de datos segura y robusta.</p>
+            <p>Migración de datos para el fácil acceso y manipulación de los mismos. El objetivo es centralizar la
+               gestión en una base de datos segura y robusta.</p>
          </div>
          <div class="servicio">
             <span class="icono"><i class="fa-solid fa-code"></i></span>
@@ -104,7 +110,8 @@
                <li>Python</li>
                <li>SQL</li>
             </ul>
-            <p>Clases virtuales de tutorías y acompañamiento para estudiantes universitarios o de educación secundaria.</p>
+            <p>Clases virtuales de tutorías y acompañamiento para estudiantes universitarios o de educación secundaria.
+            </p>
          </div>
       </div>
       <!-- <div class="fila">
@@ -310,7 +317,7 @@
             </a>
          </div>
 
-         <div class="proyecto">
+         <!-- <div class="proyecto">
             <div class="overlay"></div>
             <img src="media/ProyectoPolitutorias.png" alt="">
             <div class="info">
@@ -326,7 +333,7 @@
                <h4>Descripción</h4>
                <p>Diseño web</p>
             </div>
-         </div>
+         </div> -->
       </div>
    </section>
 
@@ -360,6 +367,8 @@
          <a href="https://www.youtube.com/@elvisguanoluisa8043" target="_blank"><i class="fa-brands fa-youtube"></i></a>
       </div>
    </footer>
+
+   <script src="script.js"></script>p
 
 </body>
 
